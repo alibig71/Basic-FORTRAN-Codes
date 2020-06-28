@@ -22,10 +22,14 @@
     WRITE(*,*) "Please inter five input datas"
     READ (*,*) INPUT1, INPUT2, INPUT3, INPUT4, INPUT5
     
+ 
+    !Long Statement 
     OUTPUT_LONG = INPUT1 + INPUT2 + INPUT3 + INPUT4 + INPUT5
-    OUTPUT_AND = INPUT1 + INPUT2 + INPUT3 + INPUT4 &
-    + INPUT5
-    
+    !
+    ! Short Statement
+    OUTPUT_AND = INPUT1 + INPUT2 + INPUT3 &
+        + INPUT4  + INPUT5
+        
     ! RESULT OF THE PROGRAM 
     PRINT *, "OUTPUT_LONG is :", OUTPUT_LONG
     PRINT *, "OUTPUT_AND is :", OUTPUT_AND 
